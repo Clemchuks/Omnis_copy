@@ -1,20 +1,20 @@
-<!-- =================  HEAD (just the Inter font)  ================= -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 :root{
   --primary:#1f2937;
   --accent:#F04D4D;
   --bg:#F8F7FA;
   --tile-bg:#ffffff;
-  font-family:'Poppins',sans-serif;
+}
+.panel, .card, .tile, .alert, .slider__label, .card__badge, .scale, .tile__copy, .panel__title, .card__title, .alert p, .tile__copy h4 {
+  font-family:'Montserrat', sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0}
 
 /* Panel */
 .panel{
-  background:#fffff;border:1px solid #d3d3d3;border-radius:12px;
+  background:#fff;border:1px solid #fffff;border-radius:12px;
   max-width:1000px;margin:20px auto 48px;padding:clamp(1rem,2vw,24px);
 }
 .panel__title{font-size:1.9rem;font-weight:700;color:var(--primary);text-align:center;margin-bottom:1.4rem}
@@ -28,7 +28,7 @@
 @media(max-width:520px){.card__head{flex-direction:column;gap:.4rem}}
 
 /* Photo */
-.card__photo{text-align:center;margin-bottom:-3px;}
+.card__photo{text-align:center;margin-bottom: 3px;}
 .card__photo img{width:260px;max-width:100%;height:auto}
 
 /* Progress bar */
@@ -77,19 +77,18 @@
 .tile__copy h4{font-size:1rem;line-height:1.35;font-weight:600;color:var(--primary)}
 </style>
 
-<!-- =================  BODY / MARK-UP  ================= -->
 <div class="panel">
-  <h2 class="panel__title">Riepilogo del profilo della tua pelle</h2>
+  <h2 class="panel__title">Summary of your Hair Profile</h2>
 
   <div class="card">
     <div class="card__head">
-      <h3 class="card__title">Livello di invecchiamento</h3>
-      <span class="card__badge">Alto</span>
+      <h3 class="card__title">Level of hair loss</h3>
+      <span class="card__badge">High</span>
     </div>
 
     <!-- Photo -->
     <div class="card__photo">
-      <img src="https://assets.prd.heyflow.com/flows/eAkikVO075IR5Rc6TdnS/www/assets/2ec37423-8055-4ceb-933a-bf0c8dde2c47/original.png" alt="Skin Profile">
+      <img src="https://assets.prd.heyflow.com/users/8vOFVFq0gzaa5XxvWZyO10tb7ay2/edb10fe9-495f-4d94-9543-be781b370eb2/thumbnail.webp" alt="Hair Profile">
     </div>
 
     <!-- Progress -->
@@ -97,24 +96,24 @@
       <div class="slider">
         <span class="slider__tick"></span><span class="slider__tick"></span><span class="slider__tick"></span>
         <div class="slider__knob">
-          <div class="slider__label">Il Tuo Livello</div>
+          <div class="slider__label">Your level</div>
         </div>
       </div>
     </div>
 
     <!-- Scale -->
     <div class="scale">
-      <p>Basso</p><p>Normale</p><p>Medio</p><p class="high">Alto</p>
+      <p>Low</p><p>Normal</p><p>Medium</p><p class="high">High</p>
     </div>
 
     <!-- Alert -->
     <div class="alert">
       <div class="level_icon">
-        <img src="https://assets.checkoutchamp.com/Funnel/assets/images/7c796047-d61e-4f7f-8133-7076592ccf2f/5887f71d-54b8-4463-8310-fa7715f53f67/1730469629-shield-warning-svgrepo-com.svg" alt="Alert Icon">
+        <img src="https://bit.ly/4lULmam" alt="Alert Icon">
       </div>
       <div>
-        <strong>Livello ALTO</strong>
-        <p>Un alto livello di invecchiamento della pelle può causare rughe profonde, pelle spenta e poco elastica, oltre a un calo della fiducia in te stesso.</p>
+        <strong>HIGH level</strong>
+        <p>Your hair seems to thin out fast. This is due to high level of DHT, dormant hair follicles and decreased blood flow.</p>
       </div>
     </div>
 
@@ -122,38 +121,38 @@
     <div class="tile-grid">
       <div class="tile">
         <div class="tile__icon">
-          <img src="https://assets.checkoutchamp.com/Funnel/assets/images/7c796047-d61e-4f7f-8133-7076592ccf2f/5887f71d-54b8-4463-8310-fa7715f53f67/1730469629-shield-warning-svgrepo-com.svg" alt="Shield Icon">
+          <img src="https://bit.ly/47PKPmu" alt="Shield Icon">
         </div>
         <div class="tile__copy">
-          <p>Tipo di invecchiamento</p>
-          <h4>Estrinseco</h4>
+          <p>Aging type</p>
+          <h4>Extrinsic</h4>
         </div>
       </div>
       <div class="tile">
         <div class="tile__icon">
-          <img src="https://assets.checkoutchamp.com/Funnel/assets/images/7c796047-d61e-4f7f-8133-7076592ccf2f/5887f71d-54b8-4463-8310-fa7715f53f67/1730469873-graph-svgrepo-com.svg" alt="Graph Icon">
+          <img src="https://bit.ly/45ESmDn" alt="Graph Icon">
         </div>
         <div class="tile__copy">
-          <p>Margine di miglioramento</p>
-          <h4>Alto</h4>
+          <p>Room For Improvement</p>
+          <h4>High</h4>
         </div>
       </div>
       <div class="tile">
         <div class="tile__icon">
-          <img src="https://assets.checkoutchamp.com/Funnel/assets/images/7c796047-d61e-4f7f-8133-7076592ccf2f/5887f71d-54b8-4463-8310-fa7715f53f67/1729850742-bolt-thunder-svgrepo-com.svg" alt="Bolt Icon">
+          <img src="https://bit.ly/46jT3RN" alt="Bolt Icon">
         </div>
         <div class="tile__copy">
-          <p>Causa</p>
-          <h4>Stress</h4>
+          <p>Trigger</p>
+          <h4>DHT Sensitivity</h4>
         </div>
       </div>
       <div class="tile">
         <div class="tile__icon">
-          <img src="https://assets.checkoutchamp.com/Funnel/assets/images/7c796047-d61e-4f7f-8133-7076592ccf2f/5887f71d-54b8-4463-8310-fa7715f53f67/1729850799-magnifying-glass-svgrepo-com.svg" alt="Magnifying Icon">
+          <img src="https://tinyurl.com/t5b2cw8u" alt="Magnifying Icon">
         </div>
         <div class="tile__copy">
-          <p>Impatto sull'aspetto e sulla sicurezza:</p>
-          <h4>Notevole</h4>
+          <p>Impact on Appearance:</p>
+          <h4>Noticeable</h4>
         </div>
       </div>
     </div>
